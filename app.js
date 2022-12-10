@@ -12,7 +12,7 @@ app.use(logger('dev'))
 app.use(cors()) //to connect frontend and backend without any disturbance
 
 
-app.use(express.static(__dirname +'/dist/frontend'));
+app.use(express.static(__dirname +'./dist/frontend'));
 
 //api setup
 
@@ -32,7 +32,7 @@ app.get('/download/:resume', (req,res)=>{
 
 
 app.get('*', function(req, res){
-    res.sendFile(path.join(__dirname +'/dist/frontend/index.html'));
+    res.sendFile(path.join(__dirname +'./dist/frontend/index.html'));
 });
 
 
