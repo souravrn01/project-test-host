@@ -12,7 +12,7 @@ app.use(logger('dev'))
 app.use(cors()) //to connect frontend and backend without any disturbance
 
 
-app.use(express.static('./dist/frontend'));
+app.use(express.static(__dirname +'/dist/frontend'));
 
 //api setup
 
