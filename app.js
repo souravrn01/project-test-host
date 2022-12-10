@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const logger = require('morgan') // for seeing api calls in terminal
 require('./middlewares/mongodb') //to init mongoDB
-
+const path = require('path'); 
 
 const fs = require("fs")
 const app = express();
@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(logger('dev'))
 app.use(cors()) //to connect frontend and backend without any disturbance
 
-const path = require('path'); 
+
 app.use(express.static('./dist/frontend'));
 
 //api setup
@@ -22,9 +22,6 @@ const api = require('./routes/api')
 app.use('/api', api)
 
 
-app.get('/*', function(req, res){
-    res.sendFile(path.join(__dirname +'/dist//frontend/index.html'));
-});
 
 
 // app.use('/uploads', express.static('uploads'))
@@ -34,6 +31,9 @@ app.get('/download/:resume', (req,res)=>{
 })
 
 
+app.get('/*', function(req, res){
+    res.sendFile(path.join(__dirname +'/dist//frontend/index.html'));
+});
 
 
 
