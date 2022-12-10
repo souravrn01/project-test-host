@@ -2,7 +2,7 @@ const {JsonWebTokenError} = require("jsonwebtoken")
 const jwt = require('jsonwebtoken')
 
 //middleware
-function verifytoken (req, res, next) {
+function jwtverify (req, res, next) {
     console.log('headers=', req.headers.authorization);
     if (!req.headers.authorization) {
         return res.status(401).send('Unauthorized request'); 
@@ -22,4 +22,4 @@ function verifytoken (req, res, next) {
     next();
 
 }
-module.exports = verifytoken
+module.exports = jwtverify
