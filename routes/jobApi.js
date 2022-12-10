@@ -1,7 +1,7 @@
 const express  = require('express')
 const router = express.Router()
 const JOBDATA = require('../models/jobs')
-const verifytoken=require('../middlewares/jwtVerify')
+const verifytoken=require('../middlewares/jwtverify.js')
 router.get('/getjob',verifytoken, async(req, res)=>{  // getting job
     try {
         let jobs = await JOBDATA.find()
