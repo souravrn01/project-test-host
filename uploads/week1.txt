@@ -1,0 +1,88 @@
+In the following HTML syntax, what is “class” element type called? <h1 class=“primary”>Example Heading</h1>
+A. Tag name
+B. Attribute name
+C. Attribute value
+D. Content
+ANSWER: B
+
+Find the correct output <p>HTML <em>really</em> isn't so hard!
+A. HTML really isn’t so hard!
+B. HTML really isn’t so hard!
+C. HTML really isn’t so hard!
+D. HTML really isn’t so hard!
+ANSWER: B
+
+What will be the output color of “Will be Blue”? p { color: red !important; }#thing {color: green;}<p id="thing">Will be Blue.</p>
+A. Red
+B. Green
+C. Blue
+D. Error
+ANSWER: A
+
+Name the CSS selector shown below#container {width: 960px;margin: 0 auto;}
+A. Id selector
+B. Class selector
+C. Universal Selector
+D. Element type selecto
+ANSWER: A
+
+What would be the color of text “I am awesome” for the following rules?<ul class="shopping-list" id="awesome"> <li><span>Milk</span></li> <li class="favorite" id=”must-buy”><span class=”highlight”>I am awesome</span></li></ul><style>ul#awesome {color: red;}Ul.shopping-list li.favorite span {color: blue;}</style>
+A. Blue
+B. Green
+C. Red
+D. Yellow
+ANSWER: A
+
+If you have used inline, internal, and external all the 3 stylings in HTML for a single element at the same time then which style will be applied?
+A. Inline
+B. Internal
+C. External
+D. Shows Error
+ANSWER: A
+
+Which is the correct HTML syntax for adding a link to the image?
+A. <a src=”http://www.xyz.com/image”><img src=”image path” /></a>
+B. <a src=”http://www.xyz.com/image”><img href=”image path” /></a>
+C. <link href=”http://www.xyz.com/image”><img src=”image path” /></link>
+D. <a href=”http://www.xyz.com/image”><img src=”image path” /></a>
+ANSWER: D
+
+Which of the following plugins is used to cycle through elements, like a slideshow?
+A. cycle
+B. carousel
+C. slideshow
+D. scrollspy
+ANSWER: B
+
+We use the ___ class to make any element fixed/stay at the top of the page when you scroll past it.
+A. .stay-top
+B. .fix-top
+C. .sticky-top
+D. .scroll-top
+ANSWER: C
+
+Which of the following classes in Bootstrap is used to create a dropdown menu?
+A. .dropdown
+B. .dropdown-list
+C. .select-menu
+D. .select-list
+ANSWER: A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
