@@ -32,7 +32,7 @@ app.get('/download/:resume', (req,res)=>{
 
 
 app.get('/*', function(req, res){
-    res.sendFile(path.join(__dirname +'/dist//frontend/index.html'));
+    res.sendFile(path.join(__dirname +'/dist/frontend/index.html'));
 });
 
 
