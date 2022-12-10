@@ -27,7 +27,7 @@ app.use('/api', api)
 // app.use('/uploads', express.static('uploads'))
 app.get('/download/:resume', (req,res)=>{
     console.log(res)
-    res.sendFile(path.join(__dirname, `./uploads/${req.params.resume}`))
+    res.sendFile(`./uploads/${req.params.resume}`)
 })
 
 
