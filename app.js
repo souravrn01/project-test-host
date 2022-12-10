@@ -27,12 +27,12 @@ app.use('/api', api)
 // app.use('/uploads', express.static('uploads'))
 app.get('/download/:resume', (req,res)=>{
     console.log(res)
-    res.sendFile(`./uploads/${req.params.resume}`)
+    res.sendFile(path.join(__dirname, `./uploads/${req.params.resume}`))
 })
 
 
-app.get('*', function(req, res){
-    res.sendFile('./dist/frontend/index.html');
+app.get('/*', function(req, res){
+    res.sendFile(path.join(__dirname +'/dist//frontend/index.html'));
 });
 
 
@@ -43,4 +43,3 @@ var port = process.env.PORT || 3000;
 app.listen(port,()=>{
     console.log(`server is connected to ${port}....`)
 })
-
