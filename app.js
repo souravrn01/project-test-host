@@ -9,6 +9,7 @@ const app = express();
 app.use(express.json()) 
 app.use(express.urlencoded({extended:true}))
 app.use(logger('dev'))
+
 app.use(cors()) //to connect frontend and backend without any disturbance
 
 
